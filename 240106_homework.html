@@ -5,20 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      p {
+      *{
+        background-color: #F6F6F6;
+      }
+      .title{
+        width: 800px;
+        height: 1200px;
+        border: solid #DDDDDD;
+        border-width: 1px;
+        border-radius: 25px;
+        box-shadow: 3px 6px 12px #e4e4e4; 
+        padding-top: 60px;
+        margin: 10px 20px;
+        box-sizing:content-box
+      }
+      .title2{
+        font-size: 30px;
+        font-weight: 300;
+      }
+      div {
+        display: inline;
+        text-align: center;
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+      p{
+        font-size: 30px;
         text-align: center;
       }
+      #strong{
+        font-size: 30px;
+        font-weight: 600;
+        background-color: #4C61FF
+      }
+
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   </head>
+  
   <body>
-    <p position="center">회원가입</p>
     <div>
-      <form method="get" action="none">
+      <main><p class="title">HP <span id="strong">프론트엔드 개발자 아카데미</span>
+        <br /><span class="title2">회원 로그인</span></p>
+      </main>
+        <form method="get" action="none">
         <label for="id">ID </label>
-        <input type="text" id="id" name="name" />
+        <input type="text" placeholder="아이디를 입력하세요." id="id" name="name" />
         <br />
         <label for="pw">pw </label>
-        <input type="password" placeholder="비밀번호를 입력하세요." id="pw" />
+        <input type="password" placeholder="비밀번호를 입력하세요." id="pw" name="password"/>
       </form>
     </div>
   </body>
